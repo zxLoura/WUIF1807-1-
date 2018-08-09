@@ -1,0 +1,350 @@
+
+
+/* *通用选择器：选中页面中所有的标签 */
+*{
+	margin: 0;
+	/* 内边距 */
+	padding: 0;
+	/* 列表标签的样式 */
+	list-style: none;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+.hot{
+	width: 100%;
+	height: 602px;
+	background: red;
+}
+.container{
+	width: 1200px;
+	height: 100%;
+	/* background: orange; */
+	/* 块元素在块元素中水平居中：外边距 */
+	margin: 0 auto;
+	position: relative;
+}
+/* 后代选择器：父级元素选择器 子级元素选择器 */
+.hot .top{
+	width: 100%;
+	height: 72px;
+	background: blue;
+}
+.hot .bottom{
+	width: 100%;
+	height: 514px;
+	background: yellow;
+}
+.hot .top .title{
+	width: 647px;
+	height: 100%;
+	float: left;
+	color: #333;
+	font-size: 26px;
+	text-align: right;
+	line-height: 72px;
+}
+.hot .top .more{
+	width: 46px;
+	height: 100%;
+	float: right;
+}
+.hot .top .more a{
+	color: #333;
+	font-size: 12px;
+	/* 文字修饰：none没有修饰 */
+	text-decoration: none;
+	text-align: center;
+	line-height: 72px;
+}
+.hot .bottom .list{
+	width: 394px;
+	height: 510px;
+	background: green;
+	float: left;
+	margin-right: 9px;
+}
+.hot .bottom .last{
+	margin-right: 0;
+}
+.hot .bottom .list img{
+	width: 230px;
+	height: 230px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 48px;
+}
+.hot .bottom .list h3{
+	/* 宽度不设置，默认与父级元素宽度一致 */
+	/* 高度不设置，会由内容自动撑开 */
+	/* width: 100%; */
+	text-align: center;
+	margin-top: 15px;
+}
+.hot .bottom .list p{
+	/* width: 100%; */
+	text-align: center;
+	margin-top: 15px;
+}
+.hot .bottom .list .money{
+	/* width: 100%; */
+	text-align: center;
+	margin-top: 25px;
+	color: orange;
+	font-weight: bold;
+}
+body{
+	background: #F7F7F5;
+}
+.phone{
+	width: 100%;
+	/* height: 847px; */
+	margin-top: 37px;
+	background: #000;
+}
+.phone .top{
+	width: 100%;
+	height: 74px;
+	background: blue;
+}
+.phone .bottom{
+	width: 100%;
+	height: 771px;
+	background: pink;
+}
+.phone .bottom .list{
+	width: 293px;
+	height: 384px;
+	background: #fff;
+	float: left;
+	margin-right: 9px;
+	margin-bottom: 9px;
+}
+/* 伪类选择器 */
+.phone .bottom .list:nth-child(3){
+	margin-right: 0;
+}
+.phone .bottom .list:nth-child(7){
+	margin-right: 0;
+}
+.phone .bottom .list:nth-child(1){
+	width: 595px;
+}
+.phone .bottom .list:nth-child(7){
+	height: 187px;
+}
+.phone .bottom .list:nth-child(8){
+	height: 187px;
+	margin-right: 0;
+}
+.phone .bottom .list .first-pic{
+	width: 100%;
+	height: 100%;
+}
+
+.banner{
+	width: 100%;
+	height: 524px;
+	background: yellow;
+	background-image: url('https://shopstatic.vivo.com.cn/vivoshop/commodity/20180710/201807101104213489_original.jpg');
+	background-size: cover;
+	background-position: center;
+	/* background-repeat-x: no-repeat; */
+}
+/* .banner img{
+	width: 100%;
+	height: 100%;
+} */
+/* .pay{
+	width: 27px;
+	height: 27px;
+	background-color: red;
+	background-image: url('https://shopstatic.vivo.com.cn/vivoshop/commodity/20180710/201807101104213489_original.jpg');
+	background-position: -32px -86px;
+} */
+.banner .list{
+	width: 202px;
+	height: 486px;
+	background-color: rgba(255, 255, 255, 0.6);
+	position: absolute;
+	top: 17px;
+	left: 0;
+}
+.banner .list .list-box{
+	width: 100%;
+	height: 60px;
+	/* background-color: #fff; */
+	border-bottom: 1px solid #000;
+}
+.banner .list .list-box a{
+	display: block;
+	background-color: pink;
+	width: 100%;
+	height: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	position: relative;
+}
+.banner .list .list-box a i{
+	/* 文字样式：normal正常/italic倾斜 */
+	font-style: normal;
+	position: absolute;
+	right: 28px;
+	top: 0;
+}
+.banner .list .list-box:nth-child(1){
+	margin-top: 32px;
+}
+.banner .dot{
+	width: 168px;
+	height: 10px;
+	background-color: red;
+	position: absolute;
+	/* left: 50px; */
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	/* top: 0; */
+	bottom: 20px;
+	/* margin: auto 0; */
+}
+.banner .leftBtn{
+	width: 40px;
+	height: 70px;
+	/* background-color: yellow; */
+	background-image: url('https://i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png');
+	background-position: -83px 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	left: 202px;
+}
+.banner .leftBtn:hover{
+	background-position: 0 0;
+}
+.banner .rightBtn{
+	width: 40px;
+	height: 70px;
+	background-color: yellow;
+	background-image: url('https://i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png');
+	background-position: -126px 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	right: 0;
+}
+.banner .rightBtn:hover{
+	background-position: -42px 0;
+}
+.back{
+	width: 40px;
+	height: 150px;
+	background-color: pink;
+	position: fixed;
+	right: 0;
+	bottom: 50px;
+}
+
+footer{
+	width: 100%;
+	background: #fff;
+	padding-top: 30px;
+	margin-top: 94px;
+}
+footer .top{
+	width: 100%;
+	height: 90px;
+}
+footer .center{
+	width: 100%;
+	height: 332px;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding-top: 67px;
+	padding-bottom: 67px;
+}
+footer .bottom{
+	width: 100%;
+	height: 100px;
+}
+footer .top ul li{
+	width: 300px;
+	height: 100%;
+	border-right: 1px solid #000;
+	float: left;
+	line-height: 90px;
+	text-align: center;
+}
+footer .center .left{
+	width: 950px;
+	height: 100%;
+	float: left;
+}
+footer .center .right{
+	width: 250px;
+	height: 100%;
+	float: right;
+}
+footer .center .left dl{
+	width: 190px;
+	/* height: 160px; */
+	/* background-color: red; */
+	float: left;
+}
+footer .center .left dl dt{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+footer .center .left dl dd a{
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+}
+footer .center .right a{
+	display: block;
+	width: 100%;
+	font-size: 24px;
+	color: blue;
+	font-weight: bold;
+	text-align: right;
+	text-decoration: none;
+	margin-bottom: 24px;
+}
+footer .center .right h5{
+	text-align: right;
+	margin-bottom: 15px;
+}
+footer .center .right p{
+	text-align: right;
+}
+footer .bottom p{
+	width: 790px;
+	float: left;
+	height: 100%;
+	line-height: 100px;
+	font-size: 12px;
+	color: #333;
+}
+footer .bottom .right{
+	width: 174px;
+	height: 100%;
+	float: right;
+	line-height: 100px;
+	font-size: 12px;
+	color: #333;
+}
+footer .bottom .right a:nth-child(1){
+	margin-right: 50px;
+}
+
